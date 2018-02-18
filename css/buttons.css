@@ -1,0 +1,14 @@
+.news-buttons-buttons {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    z-index: 999999;
+}
+
+.news-buttons-button {
+    width: 2.5rem;
+    height: 2.5rem;
+}
