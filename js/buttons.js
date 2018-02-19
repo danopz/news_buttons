@@ -6,7 +6,7 @@
  * @license   https://github.com/danopz/news_buttons/blob/master/LICENSE (MIT License)
  */
 (function (document) {
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         var makeEvent = function (key) {
             var event = new Event('keyup');
             event.key = key;
@@ -24,7 +24,13 @@
         var row = document.createElement('div');
         row.classList.add('news-buttons-buttons');
 
-        [['icon-play-previous', makeEvent('K')], ['icon-play-next', makeEvent('J')]].forEach(function(def){
+        [
+            ['icon-star', makeEvent('S')],
+            ['icon-toggle', makeEvent('U')],
+            ['icon-link', makeEvent('O')],
+            ['icon-play-previous', makeEvent('K')],
+            ['icon-play-next', makeEvent('J')]
+        ].forEach(function (def) {
             var b = document.createElement('button');
             b.classList.add('news-buttons-button');
             b.classList.add(def[0]);
